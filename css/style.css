@@ -1,0 +1,215 @@
+.ca{
+  text-align: center;
+}
+
+.abc{
+  width:100%;
+}
+
+/*blue*/
+.mybuttonstyle{
+	border-color: rgba(110, 127, 255, 0.85) !important;
+	background: rgba(110, 127, 255, 0.85) !important;
+}
+
+/*pink*/
+.mybuttonstyle2{
+	border: 0 !important;
+	background: rgba(	255, 106, 156, 0.85) !important;
+	color: #fff;
+}
+
+/*blue*/
+#blueBtn:hover, #blueBtn:active{
+	border-color: rgba(110, 127, 255, 1) !important;
+  	background: rgba(110, 127, 255, 1) !important;
+}
+
+/*pink*/
+#pinkBtn:hover, #pinkBtn:active{
+  background: rgba(	255, 106, 156, 1) !important;
+  color: #fff;
+}
+
+#blueBtn-secondary:hover{
+	color: white !important;
+	border-color: rgba(110, 127, 255, 1) !important;
+  	background: rgba(110, 127, 255, 1) !important;	
+}
+
+#blueBtn-secondary.disabled, #blueBtn-secondary:disabled {
+	color: rgba(110, 127, 255, 1) !important;
+	background-color: transparent;
+}
+
+#blueBtn-secondary:not(:disabled):not(.disabled):active, #blueBtn-secondary:not(:disabled):not(.disabled).active,
+.show > #blueBtn-secondary.dropdown-toggle {
+	color: #fff;
+	border-color: rgba(110, 127, 255, 1) !important;
+  	background: rgba(110, 127, 255, 1) !important;
+}
+
+[type='radio'].displayNone {
+display: none; 
+}
+
+.aBlack{
+	color:#3f4653;
+}
+
+.aBlack:hover{
+	text-decoration:none;
+	color:#3f4653;
+}
+
+.aWhite{
+	color:white;
+
+}
+
+.aWhite:hover{
+	text-decoration: none;
+	color:white;
+}
+
+.fa-angle-right{
+	color: rgba(110, 127, 255, 1);
+}
+
+.nav-link-pink.active {
+	color: white !important;
+	background-color:rgba(	255, 106, 156, 0.85) !important;
+	border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.nav-tabs-pink{
+	border-bottom: 2px solid rgba(	255, 106, 156, 0.85);
+	border-color: rgba(	255, 106, 156, 0.85);
+}
+
+.center{
+	text-align:center;
+}
+
+.borderGrey{
+	border-color:#dee2e6;
+	border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.buttonC {  
+	width: 4em;
+  	height: 4em;
+  	line-height: 4em; /* adjust line height to align vertically*/
+  	padding:0;
+  	border-radius: 50%;
+  }
+
+.buttonCA {  
+	width: 6em;
+  	height: 6em;
+  	line-height: 6em; /* adjust line height to align vertically*/
+  	padding:0;
+  	border-radius: 50%;
+  	margin-right:1em;
+  	float:left;
+  	margin-top:0.5em;
+  }
+
+ .buttonMain{
+ 	width:6em;
+ 	height:6em;
+ 	line-height:6em;
+ 	padding:0;
+  	border-radius: 50%;
+	background-color: rgba(110, 127, 255, 0.85);
+ 	color:white;
+ 	text-align:center;
+ }
+
+#widthPop{
+	width: 50%;
+}
+
+/* Dashboard Styles *************/
+.hideContentD {
+		overflow: hidden;
+		height: 1.8em;
+}
+
+/* Offer page*/
+.hideContent{
+	overflow: hidden;
+	height: 3.2em;
+}
+
+.showContent {
+		height: auto;
+}
+
+#Mybutton1 {
+		padding: 10px 0;
+		text-align: center;
+}
+
+#view-more {
+		clear: both;
+}
+
+.wrapper {
+	display:flex;
+	flex-wrap: wrap;
+  }
+
+#container-1, #container-2{
+	float:left;
+	width: 63%; 
+  }
+  
+.addPadding{
+	padding-top:5em;
+	padding-right:4em !important;
+}
+
+/* every page */
+.roundCornersMenuLeft{
+	border-top-left-radius: .25em !important;
+	border-bottom-left-radius: .25em !important;
+	border-top-right-radius: 0em !important;
+	border-bottom-right-radius: 0em !important;
+}
+
+.roundCornersMenuRight{
+	border-top-right-radius: .25em !important;
+	border-bottom-right-radius: .25em !important;
+	border-top-left-radius: 0em !important;
+	border-bottom-left-radius: 0em !important;
+}
+
+#smallBell{	
+}
+
+#bigBell{
+	display:none;
+}
+
+.fa-bell{
+	color:rgba(0,0,0,.5);
+}
+
+/* Offers & Dashboard******/
+.roundCornersAll{
+	border-top-right-radius: .75em !important;
+	border-bottom-right-radius: .75em !important;
+	border-top-left-radius: .75em !important;
+	border-bottom-left-radius: .75em !important;	
+}
+
+/* Details *******/
+#roundCornersTop{
+	border-top-left-radius: .75em;
+	border-top-right-radius: .75em;
+	border-bottom-left-radius: 0em;
+	
+}

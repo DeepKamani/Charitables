@@ -1,0 +1,164 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chat | Charitables</title>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Libraries CSS Files -->
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />
+<link href="css/normalize.css" rel="stylesheet">
+<script src="http://d309knd7es5f10.cloudfront.net/zimcode_1.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+<script src="http://d309knd7es5f10.cloudfront.net/zimserver_urls.js"></script>
+<script src="http://d309knd7es5f10.cloudfront.net/zimsocket_1.0.js"></script>
+<script src="js/chat.js"></script>
+
+
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link src="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Oswald" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link href="css/chat.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/media-queries.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+<style>
+
+
+
+
+</style>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand h1" href="home.php">Charitables</a>
+			<div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+					</button>
+					<?php
+					if (isset($_SESSION['role'])) {
+							?>
+					<a class="d-flex justify-content-end float-right nav-link navbar-right" href="#">
+							<i class="fas fa-bell"></i>
+					</a>
+					<?php
+
+			}
+			?>
+			</div>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav">
+							<?php
+							if (isset($_SESSION['role'])) {
+									?>
+							<li class="nav-item">
+									<a class="nav-link" href="dashboard.php">Dashboard</a>
+							</li>
+							<?php
+
+					}
+					?>
+							<li class="nav-item">
+									<a class="nav-link" href="donate.php">Support Us</a>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link" href="contact.php">Contact Us</a>
+							</li>
+							<?php
+							if (isset($_SESSION['role'])) {
+									?>
+							<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Profile
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+											<a class="dropdown-item" href="#">Edit Account</a>
+											<div class="dropdown-divider"></div>
+											<a class="dropdown-item" href="logout.php">Logout</a>
+									</div>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link" href="#">
+											<i class="fas fa-bell"></i>
+									</a>
+							</li>
+							<?php
+
+					} else {
+							?>
+							<li class="nav-item">
+									<a class="nav-link" href="login.php">Login</a>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link" href="signUp.php">Sign Up</a>
+							</li>
+							<?php
+
+					}
+					?>
+					</ul>
+			</div>
+	</nav>
+
+
+
+<div class="contianer text-center">
+
+
+					<!-- call to database (dynamically) -->
+
+
+									<h3 class="aBlack">John Doe</h3>
+
+
+
+
+
+					</a>
+					<hr>
+
+			<input type=text id=room value="abc" /><br />
+			NAME: <input type=text id=name placeholder="Your Name" />
+			<br />
+			<a id="join" class="button" onclick="doJoin(); return false;">JOIN</a>
+			<br /><br />
+			<div id="messages" class="col-10 col-sm-10 col-md-6 col-lg-6 col-xl-6 justify-content-center m-auto"></div>
+
+			<input type=text id=message class="col-10 col-sm-10 col-md-6 col-lg-6 col-xl-6 "placeholder="Your Message" />
+			<br />
+
+			<a class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 btn sonar-btn btn-primary m-auto mybuttonstyle" onclick="doSend(); return false;">SEND</a>
+
+
+			</div>
+	</div>
+
+		</div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
